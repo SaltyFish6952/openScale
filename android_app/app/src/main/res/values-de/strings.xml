@@ -378,7 +378,7 @@
     <string name="compatibility_dialog_confirm_button">Verstanden &amp; Speichern</string>
     <string name="go_to_project_website_button">Zur Projekt-Webseite</string>
     <!-- LegacyScaleAdapter (Bluetooth-Treiber) -->
-    <string name="legacy_adapter_event_initializing">Initialisierungsprozess...</string>
+    <string name="legacy_adapter_event_initializing">Initialisierungsprozess…</string>
     <string name="legacy_adapter_event_connection_lost">Verbindung verloren</string>
     <string name="legacy_adapter_event_connection_disconnected">Verbindung getrennt</string>
     <string name="legacy_adapter_event_device_not_found">Gerät nicht gefunden. %s</string>
@@ -453,11 +453,10 @@
     <string name="dialog_title_delete_type">Typ löschen?</string>
     <string name="dialog_text_delete_type">Möchtest du den benutzerdefinierten Typ „%1$s“ wirklich löschen? Alle zugehörigen Messungen werden ebenfalls endgültig gelöscht. Diese Aktion kann nicht rückgängig gemacht werden.</string>
     <string name="snackbar_items_deleted_successfully">%1$d Elemente erfolgreich gelöscht.</string>
-    <string name="snackbar_error_deleting_items">Fehler beim Löschen der Elemente.</string>
     <string name="dialog_title_select_user_for_assignment">Nutzer für Zuweisung auswählen</string>
     <string name="snackbar_no_other_users_to_change_to">Keine anderen Nutzer vorhanden, zu denen gewechselt werden kann.</string>
     <string name="snackbar_items_user_changed_successfully">Nutzer für %1$d Elemente erfolgreich geändert.</string>
-    <string name="snackbar_error_user_changed_items">Fehler beim Ändern des Nutzers für einige Elemente.</string>
+
     <!-- Insights Screen -->
     <string name="insights_confidence_low">Begrenzte Datenbasis</string>
     <string name="insights_label_recomposition">Rekomposition</string>
