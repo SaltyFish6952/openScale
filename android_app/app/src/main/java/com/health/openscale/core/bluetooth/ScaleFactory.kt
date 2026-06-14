@@ -21,6 +21,7 @@ import android.content.Context
 import com.health.openscale.core.bluetooth.scales.ScaleDeviceHandler
 import com.health.openscale.core.bluetooth.scales.AAAxHandler
 import com.health.openscale.core.bluetooth.scales.ActiveEraBF06Handler
+import com.health.openscale.core.bluetooth.scales.BongFitHandler
 import com.health.openscale.core.bluetooth.scales.CultSmartScaleProHandler
 import com.health.openscale.core.bluetooth.scales.BeurerSanitasHandler
 import com.health.openscale.core.bluetooth.scales.BroadcastScaleAdapter
@@ -100,6 +101,7 @@ class ScaleFactory @Inject constructor(
     // TaylorBIAHandler must stay ahead of MGBHandler — both live on service 0xFFB0, and MGBHandler
     // also matches that service, so a later position would let MGB wrongly claim the Taylor scale.
     private val modernKotlinHandlers: List<ScaleDeviceHandler> = listOf(
+        BongFitHandler(),
         TaylorBIAHandler(),
         RyFitHandler(),
         CultSmartScaleProHandler(),
