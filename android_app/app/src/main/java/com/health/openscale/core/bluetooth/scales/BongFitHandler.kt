@@ -133,7 +133,9 @@ class BongFitHandler : ScaleDeviceHandler() {
 
         if (isHistoryControlFrame(data)) {
             logI("Bong Fit history control frame ascii='${data.toAsciiPreview(8)}'")
-            finishHistoryRequest(if (isEndMarker(data)) "end marker" else "success marker")
+            if (isEndMarker(data)) {
+                finishHistoryRequest("end marker")
+            }
             return
         }
 
